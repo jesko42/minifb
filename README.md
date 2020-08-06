@@ -300,9 +300,13 @@ Visual Studio (ver 2012 express has been tested) tools needed (using the vcvars3
 If you use CMake the Visual Studio project will be generated (2015, 2017 and 2019 have been tested).
 
 
-### x11 (FreeBSD, Linux, *nix)
+### x11 (FreeBSD, Linux, *nix) e.g. Ubuntu
 
-gcc and x11-dev libs needs to be installed. To build the code run tundra2 x11-gcc-debug and you should be able to run t2-output/x11-gcc-debug-default/noise
+gcc and x11-dev libs needs to be installed:
+
+sudo apt-get install -y libx11-dev libgl1-mesa-dev libgtk-3-dev pkg-confi
+
+To build the code run tundra2 x11-gcc-debug and you should be able to run t2-output/x11-gcc-debug-default/noise
 
 If you use CMake just disable the flag:
 
